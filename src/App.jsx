@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { FaReact } from 'react-icons/fa';
 import './scss/nav.scss';
 import List from './pages/List';
-import Addpet from './pages/addpet';
+import Addpet from './pages/Addpet';
 import Petlogs from './pages/Petlogs';
 import AddLog from './pages/Addlog';
 import './scss/globaltags.scss';
