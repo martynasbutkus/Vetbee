@@ -1,0 +1,36 @@
+@import 'variables';
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    color: $gray;
+    margin-top: 40px;
+    h1{
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 1.2em;
+        font-weight: 400;
+        button{
+            width: 120px;
+        }
+        label{
+            display: flex;
+            flex-direction: column;
+            max-width: 350px;
+            input{
+                border: 1px solid $gray;
+                height: 30px;
+                border-radius: 5px;
+                padding-left: 5px;
+                
+            }
+        }
+    }
+}

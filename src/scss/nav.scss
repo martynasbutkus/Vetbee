@@ -1,0 +1,26 @@
+@import 'variables';
+
+nav{
+    display: flex;
+    height: 70px;
+    color: $orange;
+    border-bottom: 1px solid #66666652;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    .container{
+        display: flex;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+        .react-icon{
+            font-size: 2em;
+        }
+        h1{
+            font-weight: 400;
+            font-size: 2em;
+            margin-top: -4px;
+        }
+    }
+}
+

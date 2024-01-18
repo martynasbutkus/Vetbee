@@ -1,0 +1,33 @@
+# React Vetbee
+## 1 etapas - Pet List and navigation
+* Remtis pavyzdžiais ir naudoti postman, kad tikrintis jog teisingai viską užkraunate ir prideda (jeigu nėra error, tai greičiausiai teisingai)
+* Šriftas: lato
+* Ikonos: react-icons
+* Susikurti Pet List puslapį
+* Susikurti Add Pet puslapį
+* Sutvarkyti navigaciją
+* Naudoti komponentus ir scss
+* Papildomai: užkrovimo ir pridėjimo animacijos su framer motion
+
+## 2 etapas - Pet List and API
+* Naudoti useContext() react hook ir per App.jsx užkrauti su useEffect(), bus lengviau nereikės tiek prop drilinimo
+* Užkrauti gyvūnus naudojant GET request: https://vetbee-backend.glitch.me/v1/pets
+* Naujų gyvūnų pridėjimas (pridėjus turėtų redirect į pagrindinį) naudojant POST request: https://vetbee-backend.glitch.me/v1/pets
+* Reikalingi input ir schema: { name, dob, client_email}, kad dob užsikrautų reikės daryti išsaugoti state maždaug taip: 
+    setDob(new Date(value).toLocaleDateString("lt"))
+* Gyvūnų ištrynimas: https://vetbee-backend.glitch.me/v1/pets/id P.s. kai trinat neištrinkit visų mano pridėtų (ypač Lucky), kur yra log pridėti, nes bus kitiems lengviau, kai matys kaip atrodo API duomenis logs/id, kitu atveju bus tušti skliausteliai
+* Papildomai: ištrynus iš naujo refetch state, kad atsinaujintų visas Pet list ir nereikėtų perkraukti pačio puslapio
+
+
+## 3 etapas - Pet Logs navigation and API
+* Susikurti Pet Logs puslapį
+* Susikurti Add Log puslapį
+* Sutvarkyti navigaciją tarp jų (pradžioje tiesiog be jokių id hardcodinti)
+* Užkrauti Pet Logs pagal id iš url naudojant useParams() iš react-router-dom ir perduoti id į GET request: https://vetbee-backend.glitch.me/v1/logs/id
+* Naujų gyvūnų pridėjimas (pridėjus turėtų redirect į to pačio gyvūno logs puslapį) naudojant POST request: https://vetbee-backend.glitch.me/v1/logs/id
+* Reikalingi input ir schema: {  pet_id, description, status }. Kad gauti pet_id vėl remtis į url ir naudojant tą patį useParams()
+* Galimas ir net skatintinas bendradarbiavimas tarpusavyje
+* Viską įkelti į Github ir paviešinti per Vercel
+* Sėkmės!
+
+
